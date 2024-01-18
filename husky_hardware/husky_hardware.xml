@@ -1,0 +1,9 @@
+<library path="husky_hardware">
+  <class name="husky_hardware/HuskyHardware"
+         type="romea::ros2::Huskyardware"
+         base_class_type="hardware_interface::SystemInterface">
+    <description>
+      Hardware interface for husky robot
+    </description>
+  </class>
+</library>
