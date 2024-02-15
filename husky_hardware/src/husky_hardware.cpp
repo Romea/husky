@@ -121,7 +121,7 @@ hardware_interface::return_type HuskyHardware::read(
   // RCLCPP_ERROR(rclcpp::get_logger("HuskyHardware"), "Read data from robot ");
   try {
     horizon_legacy::Channel<clearpath::DataDifferentialSpeed>::Ptr speed =
-      horizon_legacy::Channel<clearpath::DataDifferentialSpeed>::requestData(polling_timeout_);
+      horizon_legacy::Channel<clearpath::DataDifferentialSpeed>::requestData(POLLING_TIMEOUT);
 
     if (speed) {
       front_left_wheel_angular_speed_measure_ = speed->getLeftSpeed() / front_wheel_radius_;
@@ -129,8 +129,7 @@ hardware_interface::return_type HuskyHardware::read(
       front_right_wheel_angular_speed_measure_ = speed->getRightSpeed() / front_wheel_radius_;
       rear_right_wheel_angular_speed_measure_ = speed->getRightSpeed() / rear_wheel_radius_;
     } else {
-      RCLCPP_ERROR(
-        rclcpp::get_logger(HW_NAME), "Could not get speed data");
+      RCLCPP_ERROR(rclcpp::get_logger("HuskyHardware"), "Could not get speed data");
     }
 
     set_hardware_state_();
