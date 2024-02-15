@@ -4,6 +4,8 @@
    <xacro:macro name="husky" params="mode prefix">
 
       <xacro:include filename="$(find romea_mobile_base_description)/urdf/base4WD.chassis.xacro" />
+      <xacro:include filename="$(find husky_description)/urdf/visual/chassis.xacro" />
+      <xacro:include filename="$(find husky_description)/urdf/visual/wheels.xacro" />
 
       <xacro:property name="conf" value="$(find husky_description)/config/husky.yaml" />
       <xacro:property name="props" value="${load_yaml(conf)}" />
@@ -113,20 +115,11 @@
          value="${min(front_wheel_radius,rear_wheel_radius)}" />
 
       <xacro:chassis>
-         <!-- visual chassis -->
-         <visual>
-            <origin
-               xyz="${aabb_center_x-body_reference_x} ${aabb_center_y}  ${aabb_center_z-chassis_height}"
-               rpy="0 0 0" />
-            <geometry>
-               <mesh
-                  filename="file://$(find clearpath_platform_description)/meshes/a200/base_link.dae" />
-            </geometry>
-         </visual>
-         <!-- visual front wheel -->
-         <cylinder length="${front_wheel_width}" radius="${front_wheel_radius}" />
-         <!-- visual rear wheel -->
-         <cylinder length="${rear_wheel_width}" radius="${rear_wheel_radius}" />
+         <xacro:chassis_visual />
+         <xacro:front_left_wheel_visual />
+         <xacro:front_right_wheel_visual />
+         <xacro:rear_left_wheel_visual />
+         <xacro:rear_right_wheel_visual />
       </xacro:chassis>
 
    </xacro:macro>
