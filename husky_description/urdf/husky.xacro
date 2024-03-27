@@ -6,6 +6,7 @@
       <xacro:include filename="$(find romea_mobile_base_description)/urdf/base4WD.chassis.xacro" />
       <xacro:include filename="$(find husky_description)/urdf/visual/chassis.xacro" />
       <xacro:include filename="$(find husky_description)/urdf/visual/wheels.xacro" />
+      <xacro:include filename="$(find husky_description)/urdf/visual/top.xacro" />
 
       <xacro:property name="conf" value="$(find husky_description)/config/husky.yaml" />
       <xacro:property name="props" value="${load_yaml(conf)}" />
@@ -121,6 +122,8 @@
          <xacro:rear_left_wheel_visual />
          <xacro:rear_right_wheel_visual />
       </xacro:chassis>
+
+      <xacro:chassis_top />
 
    </xacro:macro>
 

@@ -1,0 +1,19 @@
+<?xml version="1.0"?>
+<robot xmlns:xacro="http://www.ros.org/wiki/xacro" name="chassis_top">
+    <xacro:macro name="chassis_top">
+        <link name="${prefix}chassis_top_link">
+            <visual>
+                <origin xyz="0 0 0.0" rpy="0 0 0" />
+                <geometry>
+                    <mesh
+                        filename="file://$(find clearpath_platform_description)/meshes/a200/top_chassis.stl" />
+                </geometry>
+            </visual>
+        </link>
+        <joint name="${prefix}chassis_top_joint" type="fixed">
+            <origin xyz="0 0 -0.03" rpy="0 0 0" />
+            <parent link="${prefix}base_link" />
+            <child link="${prefix}chassis_top_link" />
+        </joint>
+    </xacro:macro>
+</robot>
