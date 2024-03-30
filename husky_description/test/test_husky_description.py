@@ -41,7 +41,7 @@ def test_hardware_plugin_name():
 
     assert (
         ros2_control_urdf_xml("live").find("ros2_control/hardware/plugin").text
-        == "husky_hardware/Robot4WDHardware"
+        == "husky_hardware/HuskyHardware"
     )
 
     assert (
