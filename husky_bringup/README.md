@@ -8,7 +8,7 @@ The husky_bringup package provides a suite of launch files enabling both manual 
 
 ### 1.1 Base launch file ###
 
-The **husky_base.launch.py** file, located in the launch directory, is responsible for starting the controller manager, the robot's controller, and a command multiplexer. The configuration of the controller manager and the robot controller are defined in the **controller_manager.yaml** and **mobile_base_controller.yaml** files, respectively, which are located in the config directory. By default, the **MobileBaseEnhancedController4WD** controller, provided by the **romea_mobile_base_controller** package, is used to operate Ceol robot.
+The **husky_base.launch.py** file, located in the launch directory, is responsible for starting the controller manager, the robot's controller, and a command multiplexer. The configuration of the controller manager and the robot controller are defined in the **controller_manager.yaml** and **mobile_base_controller.yaml** files, respectively, which are located in the config directory. By default, the **MobileBaseEnhancedController4WD** controller, provided by the **romea_mobile_base_controller** package, is used to operate Husky robot.
 
 You can launch these nodes via command line:
 
