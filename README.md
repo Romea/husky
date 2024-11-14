@@ -31,7 +31,7 @@ This project is released under the Apache License 2.0. See the LICENSE file for 
 
 ## **Authors**
 
- Husky project was developed by **Jean Laneurit** in the context of BaudetRob ANR project.
+ Husky project was developed by **Jean Laneurit** in the context of Tirrex ANR project.
 
 ## **Contact**
 
