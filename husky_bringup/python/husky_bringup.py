@@ -14,13 +14,31 @@
 
 
 from ament_index_python.packages import get_package_share_directory
-from husky_description import urdf
+import husky_description
 
 
-def urdf_description(prefix, mode, base_name, ros_prefix):
+def get_configuration():
+    return husky_description.get_configuration()
 
-    controller_manager_yaml_file = (
-        get_package_share_directory("husky_bringup") + "/config/controller_manager.yaml"
+
+def generate_configuration_file(extended):
+    configuration = get_configuration()
+    return husky_description.generate_configuration_file(configuration, extended)
+
+
+def generate_ros2_control_description(prefix, mode, base_name):
+    return husky_description.generate_ros2_control_description(
+        prefix, mode, base_name
     )
 
-    return urdf(prefix, mode, base_name, controller_manager_yaml_file, ros_prefix)
+
+def generate_urdf_description(prefix, mode, base_name, ros_prefix):
+
+    controller_manager_yaml_file = (
+        get_package_share_directory("husky_bringup")
+        + "/config/controller_manager.yaml"
+    )
+
+    return husky_description.generate_urdf_description(
+        prefix, mode, base_name, controller_manager_yaml_file, ros_prefix
+    )
