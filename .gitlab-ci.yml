@@ -5,4 +5,3 @@ include:
 
 variables:
   PKGS_TO_BUILD_TEST: "husky_bringup husky_description husky_hardware"
-  ROS_DISTRO_TO_TEST: "humble"
