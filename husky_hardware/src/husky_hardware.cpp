@@ -112,13 +112,9 @@ void HuskyHardware::send_null_command_()
 
 
 //-----------------------------------------------------------------------------
-#if ROS_DISTRO == ROS_GALACTIC
-hardware_interface::return_type HuskyHardware::read()
-#else
 hardware_interface::return_type HuskyHardware::read(
   const rclcpp::Time & /*time*/,
   const rclcpp::Duration & /*period*/)
-#endif
 {
   // RCLCPP_ERROR(rclcpp::get_logger("HuskyHardware"), "Read data from robot ");
   try {
@@ -144,13 +140,9 @@ hardware_interface::return_type HuskyHardware::read(
 
 
 //-----------------------------------------------------------------------------
-#if ROS_DISTRO == ROS_GALACTIC
-hardware_interface::return_type HuskyHardware::write()
-# else
 hardware_interface::return_type HuskyHardware::write(
   const rclcpp::Time & /*time*/,
   const rclcpp::Duration & /*period*/)
-#endif
 {
   // RCLCPP_ERROR(rclcpp::get_logger("HuskyHardware"), "Send command to robot");
   get_hardware_command_();
