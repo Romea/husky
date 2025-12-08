@@ -27,11 +27,10 @@ repositories:
 
   third_party/clearpath_msgs:
     type: git
-    url: https://github.com/Romea-Third-Party/clearpath_msgs
+    url: https://github.com/clearpathrobotics/clearpath_msgs.git
   third_party/clearpath_common:
     type: git
-    url: https://github.com/Romea-Third-Party/clearpath_common
-    version: romea
+    url: https://github.com/clearpathrobotics/clearpath_common.git
   third_party/clearpath_config:
     type: git
-    url: https://github.com/Romea-Third-Party/clearpath_config
+    url: https://github.com/Romea-Third-Party/clearpath_config.git
