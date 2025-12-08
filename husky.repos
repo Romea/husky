@@ -31,6 +31,6 @@ repositories:
   third_party/clearpath_common:
     type: git
     url: https://github.com/clearpathrobotics/clearpath_common.git
-  third_party/clearpath_config:
+  third_party/clearpath_robot:
     type: git
-    url: https://github.com/Romea-Third-Party/clearpath_config.git
+    url:  https://github.com/clearpathrobotics/clearpath_robot.git
