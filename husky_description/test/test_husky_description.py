@@ -15,7 +15,7 @@
 
 # import pytest
 import xml.etree.ElementTree as ET
-from husky_description import generate_urdf_description, generate_ros2_control_description
+from husky_description import generate_ros2_control_description, generate_urdf_description
 
 
 def urdf_xml(mode):

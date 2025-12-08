@@ -16,7 +16,7 @@
 
 
 from husky_bringup import generate_ros2_control_description
-from romea_common_meta_bringup import robot_urdf_prefix
+from romea_common_meta_bringup.utils import complete_mode, robot_urdf_prefix
 import sys
 
 if __name__ == "__main__":
@@ -28,7 +28,7 @@ if __name__ == "__main__":
         name, value = argument.split(":")
         parameters[name] = value
 
-    mode = parameters["mode"]
+    mode = complete_mode(parameters["mode"])
     base_name = parameters["base_name"]
     prefix = robot_urdf_prefix(parameters["robot_namespace"])
     print(generate_ros2_control_description(prefix, mode, base_name))

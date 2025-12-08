@@ -22,7 +22,7 @@
   <depend>romea_mobile_base_utils</depend>
   <depend>romea_mobile_base_hardware</depend>
   <depend>clearpath_common</depend>
-  <depend>clearpath_platform</depend>
+  <depend>clearpath_hardware_interfaces</depend>
   <depend>clearpath_platform_msgs</depend>
 
   <test_depend>ament_cmake_gtest</test_depend>

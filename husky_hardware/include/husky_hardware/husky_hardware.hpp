@@ -27,8 +27,8 @@
 #include "std_msgs/msg/bool.hpp"
 #include "std_msgs/msg/float32.hpp"
 
-#include "clearpath_platform/a200/horizon_legacy/horizon_legacy_wrapper.h"
-#include "clearpath_platform/a200/status.hpp"
+#include "clearpath_hardware_interfaces/a200/horizon_legacy/horizon_legacy_wrapper.h"
+#include "clearpath_hardware_interfaces/a200/status.hpp"
 
 #include "clearpath_platform_msgs/msg/power.hpp"
 #include "clearpath_platform_msgs/msg/status.hpp"

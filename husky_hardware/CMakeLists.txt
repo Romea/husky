@@ -25,7 +25,7 @@ find_package(romea_common_utils REQUIRED)
 find_package(romea_mobile_base_utils REQUIRED)
 find_package(romea_mobile_base_hardware REQUIRED)
 find_package(sensor_msgs REQUIRED)
-find_package(clearpath_platform REQUIRED)
+find_package(clearpath_hardware_interfaces REQUIRED)
 find_package(clearpath_platform_msgs REQUIRED)
 
 ## COMPILE
@@ -57,7 +57,7 @@ ament_target_dependencies(
   romea_mobile_base_utils
   romea_mobile_base_hardware
   sensor_msgs
-  clearpath_platform
+  clearpath_hardware_interfaces
   clearpath_platform_msgs
 )
 
@@ -103,7 +103,7 @@ ament_export_dependencies(
   romea_mobile_base_utils
   romea_mobile_base_hardware
   sensor_msgs
-  clearpath_platform
+  clearpath_hardware_interfaces
   clearpath_platform_msgs
 )
 
