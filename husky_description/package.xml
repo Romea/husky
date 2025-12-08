@@ -19,6 +19,7 @@
 
   <exec_depend>romea_simulation</exec_depend>
   <exec_depend>romea_mobile_base</exec_depend>
+  <exec_depend>clearpath_platform_description</exec_depend>
 
   <export>
     <build_type>ament_cmake</build_type>
