@@ -10,7 +10,7 @@ The exported plugin is:
 
 | Plugin | Base class | Mobile base architecture |
 |---|---|---|
-| `husky_hardware/HuskyHardware` | `HardwareSystemInterface<HardwareInterface4WD>` | `4WD` |
+| `husky_hardware/HuskyHardware` | `HardwareSystemInterface4WD` | `4WD` |
 
 ## 2) Hardware concept
 

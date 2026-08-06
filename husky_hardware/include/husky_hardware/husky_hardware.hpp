@@ -40,7 +40,7 @@ namespace romea
 namespace ros2
 {
 
-class HuskyHardware : public HardwareSystemInterface<HardwareInterface4WD>
+class HuskyHardware : public HardwareSystemInterface4WD
 {
 public:
   RCLCPP_SHARED_PTR_DEFINITIONS(HuskyHardware);
