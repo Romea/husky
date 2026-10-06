@@ -1,0 +1,39 @@
+repositories:
+  romea_core/romea_common:
+    type: git
+    url: git@forge.inrae.fr:romea_core/romea_common.git
+  romea_core/romea_mobile_base:
+    type: git
+    url: git@forge.inrae.fr:romea_core/romea_mobile_base.git
+
+  romea_ros2/tools/romea_common:
+    type: git
+    url: git@forge.inrae.fr:romea_ros2/tools/romea_common.git
+  romea_ros2/tools/romea_cmd_mux:
+    type: git
+    url: git@forge.inrae.fr:romea_ros2/tools/romea_cmd_mux.git
+  romea_ros2/tools/romea_simulation:
+    type: git
+    url: git@forge.inrae.fr:romea_ros2/simulation/romea_simulation.git
+  romea_ros2/interfaces/teleoperation/romea_joytick:
+    type: git
+    url: git@forge.inrae.fr:romea_ros2/interfaces/teleoperation/romea_joy.git
+  romea_ros2/interfaces/vehicles/romea_mobile_base:
+    type: git
+    url: git@forge.inrae.fr:romea_ros2/interfaces/vehicles/romea_mobile_base.git
+  romea_ros2/interfaces/vehicles/husky:
+    type: git
+    url: git@forge.inrae.fr:romea_ros2/interfaces/vehicles/husky.git
+
+  third_party/clearpath_msgs:
+    type: git
+    url: https://github.com/clearpathrobotics/clearpath_msgs.git
+    version: 2.7.0
+  third_party/clearpath_common:
+    type: git
+    url: https://github.com/clearpathrobotics/clearpath_common.git
+    version: 2.8.2
+  third_party/clearpath_robot:
+    type: git
+    url: https://github.com/clearpathrobotics/clearpath_robot.git
+    version: 2.8.3
