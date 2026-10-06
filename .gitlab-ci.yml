@@ -5,3 +5,4 @@ include:
 
 variables:
   PKGS_TO_BUILD_TEST: "husky_bringup husky_description husky_hardware"
+  ROSDEP_SKIP_KEYS: "can_hardware wiferion_charger valence_bms_driver ewellix_driver"
