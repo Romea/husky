@@ -7,7 +7,6 @@ repositories:
     type: git
     url: https://github.com/Romea/romea-core-mobile-base.git
     version: main
-
   romea_ros2/tools/romea_common:
     type: git
     url: https://github.com/Romea/romea-ros2-common.git
@@ -32,14 +31,19 @@ repositories:
     type: git
     url: https://github.com/Romea/husky.git
     version: main
-
   third_party/clearpath_msgs:
     type: git
-    url: https://github.com/Romea-Third-Party/clearpath_msgs
+    url: https://github.com/clearpathrobotics/clearpath_msgs.git
+    version: jazzy
   third_party/clearpath_common:
     type: git
-    version: romea
-    url: https://github.com/Romea-Third-Party/clearpath_common
-  third_party/  clearpath_config:
+    url: https://github.com/clearpathrobotics/clearpath_common.git
+    version: jazzy
+  third_party/clearpath_robot:
     type: git
-    url: https://github.com/Romea-Third-Party/clearpath_config
+    url: https://github.com/clearpathrobotics/clearpath_robot.git
+    version: jazzy
+  third_party/clearpath_ros2_socketcan_interface:
+    type: git
+    url: https://github.com/clearpathrobotics/clearpath_ros2_socketcan_interface.git
+    version: jazzy

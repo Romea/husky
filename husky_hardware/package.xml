@@ -21,7 +21,6 @@
   <depend>romea_core_mobile_base</depend>
   <depend>romea_mobile_base_utils</depend>
   <depend>romea_mobile_base_hardware</depend>
-  <depend>clearpath_common</depend>
   <depend>clearpath_hardware_interfaces</depend>
   <depend>clearpath_platform_msgs</depend>
 

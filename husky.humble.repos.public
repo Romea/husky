@@ -1,39 +1,45 @@
 repositories:
   romea_core/romea_common:
     type: git
-    url: git@forge.inrae.fr:romea_core/romea_common.git
+    url: https://github.com/Romea/romea-core-common.git
+    version: main
   romea_core/romea_mobile_base:
     type: git
-    url: git@forge.inrae.fr:romea_core/romea_mobile_base.git
-
+    url: https://github.com/Romea/romea-core-mobile-base.git
+    version: main
   romea_ros2/tools/romea_common:
     type: git
-    url: git@forge.inrae.fr:romea_ros2/tools/romea_common.git
+    url: https://github.com/Romea/romea-ros2-common.git
+    version: main
   romea_ros2/tools/romea_cmd_mux:
     type: git
-    url: git@forge.inrae.fr:romea_ros2/tools/romea_cmd_mux.git
+    url: https://github.com/Romea/romea-ros2-cmd-mux.git
+    version: main
   romea_ros2/tools/romea_simulation:
     type: git
-    url: git@forge.inrae.fr:romea_ros2/simulation/romea_simulation.git
+    url: https://github.com/Romea/romea-ros2-simulation.git
+    version: main
   romea_ros2/interfaces/teleoperation/romea_joytick:
     type: git
-    url: git@forge.inrae.fr:romea_ros2/interfaces/teleoperation/romea_joy.git
+    url: https://github.com/Romea/romea-ros2-joy.git
+    version: main
   romea_ros2/interfaces/vehicles/romea_mobile_base:
     type: git
-    url: git@forge.inrae.fr:romea_ros2/interfaces/vehicles/romea_mobile_base.git
+    url: https://github.com/Romea/romea-ros2-mobile-base.git
+    version: main
   romea_ros2/interfaces/vehicles/husky:
     type: git
-    url: git@forge.inrae.fr:romea_ros2/interfaces/vehicles/husky.git
-
+    url: https://github.com/Romea/husky.git
+    version: main
   third_party/clearpath_msgs:
     type: git
     url: https://github.com/clearpathrobotics/clearpath_msgs.git
-    version: 2.7.0
+    version: 1.0.1
   third_party/clearpath_common:
     type: git
     url: https://github.com/clearpathrobotics/clearpath_common.git
-    version: 2.8.2
+    version: 1.3.7
   third_party/clearpath_robot:
     type: git
     url: https://github.com/clearpathrobotics/clearpath_robot.git
-    version: 2.8.3
+    version: 1.3.5

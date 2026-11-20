@@ -28,12 +28,17 @@ repositories:
   third_party/clearpath_msgs:
     type: git
     url: https://github.com/clearpathrobotics/clearpath_msgs.git
-    version: 2.7.0
+    version: jazzy
   third_party/clearpath_common:
     type: git
     url: https://github.com/clearpathrobotics/clearpath_common.git
-    version: 2.8.2
+    version: jazzy
   third_party/clearpath_robot:
     type: git
     url: https://github.com/clearpathrobotics/clearpath_robot.git
-    version: 2.8.3
+    version: jazzy
+  third_party/clearpath_ros2_socketcan_interface:
+    type: git
+    url: https://github.com/clearpathrobotics/clearpath_ros2_socketcan_interface.git
+    version: jazzy
+
